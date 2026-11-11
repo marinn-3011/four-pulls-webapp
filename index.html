@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Four Pulls</title>
+    <meta
+      name="description"
+      content="A Hacktoberfest chapter page. Press play and the session frame becomes a four-pull review game. Scores stay in this browser."
+    />
+    <meta name="theme-color" content="#3d5f58" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@700;800&family=Inter:wght@400;700;800&family=Martian+Mono:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip" href="#desk">Skip to the desk</a>
+
+    <div class="strip">
+      <div class="shell strip-inner">
+        <span class="dot" aria-hidden="true"></span>
+        <span class="kicker">Hacktoberfest 2026</span>
+        <p class="strip-message">The desk is taking pull requests.</p>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="shell header-bar">
+        <a class="wordmark" href="#top">Four pulls</a>
+        <button
+          class="hf-button hf-button-small hf-button-outline nav-toggle"
+          type="button"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Chapter">
+          <a href="#desk">The desk</a>
+          <a href="#how">How it works</a>
+          <a href="#board">Board</a>
+          <a href="#thanks">Thanks</a>
+        </nav>
+        <a class="hf-button hf-button-small" href="#desk" data-open-pr>Open a PR</a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="band-deep hero" aria-labelledby="hero-title">
+        <div class="shell hero-inner">
+          <p class="eyebrow">A chapter desk</p>
+          <h1 id="hero-title">Four pull requests. Then <em>we celebrate.</em></h1>
+          <p class="lede">
+            We sit with people opening their first four pull requests. The page is the
+            chapter. The frame further down is where we practice the review.
+          </p>
+          <ul class="stats">
+            <li class="stat">
+              <strong id="stat-merged">0</strong>
+              <span>Pulls merged</span>
+            </li>
+            <li class="stat">
+              <strong id="stat-best">0</strong>
+              <span>Best score</span>
+            </li>
+            <li class="stat">
+              <strong id="stat-reviews">3</strong>
+              <span>Reviews left</span>
+            </li>
+          </ul>
+        </div>
+        <div class="rail">
+          <div class="shell rail-inner">
+            <p>Bring a bug. Leave a merge.</p>
+            <a class="hf-button" href="#desk" data-open-pr>Open a PR</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="band-deep about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <h2 id="about-title">A month <em>we share.</em></h2>
+          <div>
+            <p>
+              Hacktoberfest asks for four pull requests. We like the number. It is small
+              enough to finish and large enough to learn a codebase that is not ours.
+            </p>
+            <p>
+              This chapter keeps a desk in the browser: the same borders, the same
+              buttons, and a review that talks back. Nothing here is sent to a server.
+              The board remembers only this browser.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="band-light" id="moves" aria-labelledby="moves-title">
+        <div class="shell">
+          <div class="intro">
+            <h2 id="moves-title">Three moves. <em>Then a merge.</em></h2>
+            <p>
+              The desk is a short game wearing the clothes of a review. Read the line,
+              mark the bugs, and leave the notes alone.
+            </p>
+          </div>
+          <div class="card-grid">
+            <article class="card">
+              <h3>Pick a file.</h3>
+              <p>
+                Each round lays twelve files on the desk. The review line is the whole
+                spec. We read it before we touch a cell.
+              </p>
+              <a href="#desk" data-open-pr>Open the desk</a>
+            </article>
+            <article class="card">
+              <h3>Mark the bug.</h3>
+              <p>
+                Red says bug. Yellow is a note we leave alone. A plain file is clean.
+                Press only what the review named.
+              </p>
+              <a href="#desk" data-open-pr>Try a round</a>
+            </article>
+            <article class="card">
+              <h3>Merge it.</h3>
+              <p>
+                Three clean rounds stamp the pull merged. Four stamps close the month.
+                A wrong file, or a quiet clock, spends a review.
+              </p>
+              <a href="#desk" data-open-pr>Merge from the desk</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band-green" id="how" aria-labelledby="how-title">
+        <div class="shell">
+          <div class="intro">
+            <h2 id="how-title">Four small <em>promises.</em></h2>
+            <p>
+              Click a file, or use the arrow keys and Enter. The desk works the same
+              with a pointer or a keyboard.
+            </p>
+          </div>
+          <ol class="step-list">
+            <li class="step">
+              <span class="step-num">01</span>
+              <h3>Read the review.</h3>
+              <p>The line above the files is the whole assignment for that round.</p>
+            </li>
+            <li class="step">
+              <span class="step-num">02</span>
+              <h3>Mark only bugs.</h3>
+              <p>Yellow notes and clean files cost a review. The word on the cell is the label, not only the color.</p>
+            </li>
+            <li class="step">
+              <span class="step-num">03</span>
+              <h3>Keep three reviews.</h3>
+              <p>They sit as hexes under the timer. Spend them slowly. The third one closes the desk.</p>
+            </li>
+            <li class="step">
+              <span class="step-num">04</span>
+              <h3>Stamp it merged.</h3>
+              <p>Three rounds make a pull. On the later pulls the files swap, then the marks start to move.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="band-deep desk-section" id="desk" aria-labelledby="desk-title">
+        <div class="shell">
+          <div class="intro">
+            <h2 id="desk-title">The desk <em>is open.</em></h2>
+            <p>
+              Press play and the frame becomes a review game. About one minute, four
+              pulls, three reviews. The rest of the page stays where it is.
+            </p>
+          </div>
+
+          <noscript>
+            <p>The desk needs JavaScript to deal the files. The rest of this page is readable without it.</p>
+          </noscript>
+          <div class="screen" id="screen">
+            <div class="still" id="still" aria-hidden="true">
+              <div class="still-grid">
+                <span>auth.js</span><span>readme.md</span><span class="still-bug">ci.yml</span><span>button.css</span>
+                <span>nav.js</span><span class="still-note">form.html</span><span>theme.css</span><span>store.js</span>
+                <span>api.js</span><span>card.css</span><span>lint.yml</span><span>hero.js</span>
+              </div>
+            </div>
+            <button class="play" type="button" id="play">
+              <span class="play-label">Play</span>
+              <span class="play-caption">Practice · 1:00</span>
+            </button>
+            <div class="live" id="live" hidden></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="band-light thanks" id="thanks" aria-labelledby="thanks-title">
+        <div class="shell">
+          <div class="intro">
+            <h2 id="thanks-title">Names we kept. <em>On this browser.</em></h2>
+            <p>
+              The top five scores live in local storage on this computer. Clear the
+              site data and we forget, which is fine. Nothing is uploaded.
+            </p>
+          </div>
+          <p class="storage-note" id="storage-note" hidden>
+            This browser will not keep the board. The desk still plays.
+          </p>
+          <div id="board">
+            <p class="empty-board" id="score-empty">No one has merged yet. Be the first.</p>
+            <ol class="score-list" id="score-list"></ol>
+          </div>
+        </div>
+      </section>
+
+      <section class="band-light gallery" aria-labelledby="gallery-title">
+        <div class="shell">
+          <div class="intro">
+            <h2 id="gallery-title">Four cities. <em>One long table.</em></h2>
+            <p>
+              These are generated scenes for the chapter, not photographs of a meetup
+              that happened. The captions are the cities we imagine sitting with.
+            </p>
+          </div>
+          <div class="photos">
+            <figure>
+              <img
+                src="./gallery/kochi.jpg"
+                width="1200"
+                height="900"
+                alt="A generated scene of five people seated at a long wooden table in a book-lined room, with laptops, mugs, and folded name cards."
+              />
+              <figcaption>Kochi, India</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./gallery/lisbon.jpg"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="A generated scene of two pairs of hands holding a sheet of colored squares over a desk with a notebook, pens, and a cup of tea."
+              />
+              <figcaption>Lisbon, Portugal</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./gallery/accra.jpg"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="A generated scene of four people laughing in a courtyard at night, gathered around a laptop under string lights."
+              />
+              <figcaption>Accra, Ghana</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="./gallery/montreal.jpg"
+                width="1200"
+                height="900"
+                loading="lazy"
+                alt="A generated scene of five people wrapped in blankets on a bench under orange autumn trees, with two laptops on a table beside them."
+              />
+              <figcaption>Montreal, Canada</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>Four Pulls is a static page for GitHub Pages. Scores never leave this browser.</p>
+        <a href="#top">Back to the top</a>
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
